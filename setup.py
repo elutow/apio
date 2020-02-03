@@ -47,7 +47,7 @@ setup(
     ],
     keywords=[
         'iot', 'embedded', 'fpga', 'cli', 'verilog', 'hardware',
-        'icestorm', 'yosys', 'arachne-pnr', 'iverilog', 'verilator',
+        'icestorm', 'yosys', 'nextpnr', 'iverilog', 'verilator',
         'lattice', 'ice40', 'ecp5'
     ],
 

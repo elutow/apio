@@ -31,10 +31,10 @@ if (sys.version_info > (3, 0)):
               help='Show the entire output of the command.')
 @click.option('--verbose-yosys', is_flag=True,
               help='Show the yosys output of the command.')
-@click.option('--verbose-arachne', is_flag=True,
-              help='Show the arachne output of the command.')
+@click.option('--verbose-nextpnr', is_flag=True,
+              help='Show the nextpnr output of the command.')
 def cli(ctx, board, serial_port, ftdi_id, sram, project_dir,
-        verbose, verbose_yosys, verbose_arachne):
+        verbose, verbose_yosys, verbose_nextpnr):
     """Upload the bitstream to the FPGA."""
 
     drivers = Drivers()
@@ -45,7 +45,7 @@ def cli(ctx, board, serial_port, ftdi_id, sram, project_dir,
         'verbose': {
             'all': verbose,
             'yosys': verbose_yosys,
-            'arachne': verbose_arachne
+            'nextpnr': verbose_nextpnr
         }
     }, serial_port, ftdi_id, sram)
     drivers.post_upload()

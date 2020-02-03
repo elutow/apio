@@ -55,9 +55,9 @@ Show the entire output of the command.
 Show the yosys output of the command.
 
 .. option::
-    --verbose-arachne
+    --verbose-nextpnr
 
-Show the arachne output of the command.
+Show the nextpnr output of the command.
 
 .. note::
 
@@ -73,8 +73,8 @@ Examples
   $ apio build
   [] Processing icezum
   ---------------------------------------------------------------------------------------------
-  yosys -p "synth_ice40 -blif hardware.blif" -q leds.v
-  arachne-pnr -d 1k -P tq144 -p leds.pcf -o hardware.asc -q hardware.blif
+  yosys -p "synth_ice40 -json hardware.json" -q leds.v
+  nextpnr-ice40 --hx1k --package tq144 --pcf leds.pcf --asc hardware.asc -q --json hardware.json
   icepack hardware.asc hardware.bin
   ================================== [SUCCESS] Took 0.72 seconds ==============================
 

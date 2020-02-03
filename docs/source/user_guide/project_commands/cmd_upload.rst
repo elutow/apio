@@ -67,9 +67,9 @@ Show the entire output of the command.
 Show the yosys output of the command.
 
 .. option::
-    --verbose-arachne
+    --verbose-nextpnr
 
-Show the arachne output of the command.
+Show the nextpnr output of the command.
 
 .. note::
 

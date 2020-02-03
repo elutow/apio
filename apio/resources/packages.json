@@ -16,7 +16,7 @@
   "scons" : {
     "repository": {
       "name": "tool-scons",
-      "organization": "FPGAwars"
+      "organization": "elutow"
     },
     "release": {
       "tag_name": "v%V",
@@ -25,12 +25,12 @@
       "package_name": "tool-scons",
       "extension": "tar.gz"
     },
-    "description": "Scons tool"
+    "description": "Scons tool (GNU make equivalent)"
   },
   "icestorm" : {
     "repository": {
       "name": "toolchain-icestorm",
-      "organization": "FPGAwars"
+      "organization": "elutow"
     },
     "release": {
       "tag_name": "v%V",
@@ -44,7 +44,7 @@
   "iverilog" : {
     "repository": {
       "name": "toolchain-iverilog",
-      "organization": "FPGAwars"
+      "organization": "elutow"
     },
     "release": {
       "tag_name": "v%V",
@@ -106,7 +106,7 @@
   "verilator" : {
     "repository": {
       "name": "toolchain-verilator",
-      "organization": "FPGAwars"
+      "organization": "elutow"
     },
     "release": {
       "tag_name": "v%V",

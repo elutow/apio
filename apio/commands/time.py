@@ -32,10 +32,10 @@ if (sys.version_info > (3, 0)):
               help='Show the entire output of the command.')
 @click.option('--verbose-yosys', is_flag=True,
               help='Show the yosys output of the command.')
-@click.option('--verbose-arachne', is_flag=True,
-              help='Show the arachne output of the command.')
+@click.option('--verbose-nextpnr', is_flag=True,
+              help='Show the nextpnr output of the command.')
 def cli(ctx, board, fpga, pack, type, size, project_dir,
-        verbose, verbose_yosys, verbose_arachne):
+        verbose, verbose_yosys, verbose_nextpnr):
     """Bitstream timing analysis."""
 
     # Run scons
@@ -48,7 +48,7 @@ def cli(ctx, board, fpga, pack, type, size, project_dir,
         'verbose': {
             'all': verbose,
             'yosys': verbose_yosys,
-            'arachne': verbose_arachne
+            'nextpnr': verbose_nextpnr
         }
     })
     ctx.exit(exit_code)

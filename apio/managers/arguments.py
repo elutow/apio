@@ -192,7 +192,7 @@ def process_arguments(args, resources):  # noqa
         'fpga_pack': fpga_pack,
         'verbose_all': var_verbose.get('all'),
         'verbose_yosys': var_verbose.get('yosys'),
-        'verbose_arachne': var_verbose.get('arachne')
+        'verbose_nextpnr': var_verbose.get('nextpnr')
     })
 
     return variables, var_board
