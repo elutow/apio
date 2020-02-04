@@ -1,5 +1,38 @@
 ![][apio-logo]
 
+**This is a fork of [FPGAwars/apio](https://github.com/FPGAwars/apio)**. It includes newer versions or newer alternatives of existing tooling for developing on iCE40 FPGAs, notably the TinyFPGA BX (for [elutow/ee469-labs-starter](https://github.com/elutow/ee469-labs-starter)).
+
+Currently, the following packages are forked from upstream (i.e. FPGAwars):
+
+* [toolchain-icestorm](https://github.com/elutow/toolchain-icestorm) - Replaces `arachne-pnr` with `nextpnr`, and updates all other tooling.
+* [toolchain-verilator](https://github.com/elutow/toolchain-verilator)
+* [toolchain-iverilog](https://github.com/elutow/toolchain-iverilog)
+* [tool-scons](https://github.com/elutow/tool-scons)
+
+NOTE: The tooling has currently been tested only on Debian 10 (buster) amd64, but it should work on any GNU/Linux amd64 system. Not all tooling are available on all platforms at this time due to cross-compilation issues. See the GitHub Releases page for each of the above repositories for more details.
+
+## How to use
+
+See the README in [elutow/ee469-labs-starter](https://github.com/elutow/ee469-labs-starter) for an example.
+
+Otherwise, you can run the following to install `apio` and all the forked packages:
+
+```sh
+pip3 install https://github.com/elutow/apio.git
+apio install system scons icestorm iverilog verilator
+```
+
+To revert back to the original `apio` and packages:
+
+```sh
+pip3 install apio
+apio install system scons icestorm iverilog verilator
+```
+
+The original README follows.
+
+---
+
 [![Build Status](https://travis-ci.org/FPGAwars/apio.svg?branch=master)](https://travis-ci.org/FPGAwars/apio)
 [![Latest Version](https://img.shields.io/pypi/v/apio.svg)](https://pypi.python.org/pypi/apio/)
 [![License](http://img.shields.io/:license-gpl-blue.svg)](http://opensource.org/licenses/GPL-2.0)
