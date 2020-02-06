@@ -18,7 +18,7 @@ See the README in [elutow/ee469-labs-starter](https://github.com/elutow/ee469-la
 Otherwise, you can run the following to install `apio` and all the forked packages:
 
 ```sh
-pip3 install https://github.com/elutow/apio.git
+pip3 install git+https://github.com/elutow/apio.git
 apio install system scons icestorm iverilog verilator
 ```
 
