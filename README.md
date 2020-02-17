@@ -9,7 +9,12 @@ Currently, the following packages are forked from upstream (i.e. FPGAwars):
 * [toolchain-iverilog](https://github.com/elutow/toolchain-iverilog)
 * [tool-scons](https://github.com/elutow/tool-scons)
 
-NOTE: The tooling has currently been tested only on Debian 10 (buster) amd64, but it should work on any GNU/Linux amd64 system. Not all tooling are available on all platforms at this time due to cross-compilation issues. See the GitHub Releases page for each of the above repositories for more details.
+The following platforms have all packages available:
+
+* Linux amd64 (`linux_x86_64`)
+* macOS (`darwin`)
+
+To see support for specific packages, see the GitHub Releases page for each of the above repositories.
 
 ## How to use
 
